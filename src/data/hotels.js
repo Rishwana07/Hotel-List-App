@@ -1,0 +1,57 @@
+
+export const initialHotels = [
+  {
+    id: 1,
+  title: "Grand Palace Hotel",
+  description: "A comfortable hotel.",
+  latitude: 13.0827,
+  longitude: 80.2707,
+  price: 3500,
+  image: "https://placehold.co/600x400"
+  },
+  {
+    id: 2,
+    title: "Ocean View Resort",
+    description: "A relaxing resort with scenic views and comfortable rooms.",
+    latitude: 12.9236,
+    longitude: 80.2518,
+    price: 5200,
+    image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+  },
+  {
+    id: 3,
+    title: "Green Garden Stay",
+    description: "A peaceful stay surrounded by greenery.",
+    latitude: 10.7905,
+    longitude: 78.7047,
+    price: 2200,
+    image: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+  },
+  {
+    id: 4,
+    title: "City Comfort Inn",
+    description: "A comfortable city hotel near shopping areas.",
+    latitude: 11.0168,
+    longitude: 76.9558,
+    price: 1800,
+    image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800",
+  },
+  {
+    id: 5,
+    title: "Hilltop Retreat",
+    description: "A quiet retreat with inviting rooms and hill views.",
+    latitude: 9.9252,
+    longitude: 78.1198,
+    price: 4100,
+    image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800",
+  },
+  {
+    id: 6,
+    title: "Royal Orchid Suites",
+    description: "Modern suites for business and leisure stays.",
+    latitude: 12.9716,
+    longitude: 77.5946,
+    price: 6000,
+    image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800",
+  },
+];
