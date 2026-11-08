@@ -1,14 +1,14 @@
-🏨 Hotel List App
+Hotel List App
 
-📌 Project Description
+Project Overview
 
-Hotel List App is a Full Stack CRUD Application developed using React.js, Redux, Node.js, Express.js and PostgreSQL.
+Hotel List App is a Full Stack CRUD (Create, Read, Update, Delete) web application developed using React.js, Redux, Node.js, Express.js and PostgreSQL.
 
-This application helps users manage hotel information easily. Users can add new hotels, view hotel details, edit existing hotel information and delete hotels through a simple and responsive user interface.
+The application provides an easy-to-use interface for managing hotel information. Users can add new hotels, view hotel details, update existing records and delete hotels.
 
-🚀 Technologies Used
+Technologies Used
 
-Frontend:
+Frontend
 
 * React.js
 * Redux
@@ -16,38 +16,38 @@ Frontend:
 * HTML5
 * CSS3
 
-Backend:
+Backend
 
 * Node.js
 * Express.js
 
-Database:
+Database
 
 * PostgreSQL
 
-Tools:
+Development Tools
 
 * Visual Studio Code
 * Git
 * GitHub
 * Postman
 
-✨ Features
+Key Features
 
-* ➕ Add New Hotels
-* 📋 View Hotel List
-* ✏️ Edit Hotel Details
-* 🗑️ Delete Hotels
-* 🖼️ Upload Hotel Images
-* 🔍 Search Hotels by Title
-* 💰 Filter Hotels by Price Range
-* 📄 Pagination
-* 📍 Store Latitude and Longitude
-* 🗺️ View Hotel Location on Map
-* 📱 Responsive User Interface
-* ✅ Form Validation
+* Add new hotel details.
+* View the list of available hotels.
+* Edit existing hotel information.
+* Delete hotel records.
+* Upload and display hotel images.
+* Search hotels by title.
+* Filter hotels based on minimum and maximum price.
+* Pagination for hotel listings.
+* Store hotel latitude and longitude.
+* View hotel locations on a map.
+* Responsive user interface.
+* Form validation for user inputs.
 
-📂 Project Structure
+Project Structure
 
 Hotel-List-App/
 │
@@ -62,13 +62,13 @@ Hotel-List-App/
 ├── README.md
 └── vite.config.js
 
-⚙️ Installation and Setup
+Installation and Setup
 
 1. Clone the Repository
 
 git clone https://github.com/Rishwana07/Hotel-List-App.git
 
-2. Navigate to Project Folder
+2. Navigate to the Project Directory
 
 cd Hotel-List-App
 
@@ -76,26 +76,26 @@ cd Hotel-List-App
 
 npm install
 
-4. Start Frontend
+4. Start the Frontend Application
 
 npm run dev
 
-5. Start Backend
+5. Set Up the Backend
 
-Open another terminal:
+Open a new terminal and navigate to the backend directory.
 
 cd backend
 npm install
 
-Configure the PostgreSQL database and backend environment variables.
+Configure the PostgreSQL database connection and required environment variables in the backend .env file.
 
-Run the backend using the start command configured in the backend package.json.
+Start the backend using the appropriate command defined in the backend package.json.
 
-🗄️ Database
+Database Information
 
-PostgreSQL is used to store hotel information.
+PostgreSQL is used as the database to store hotel information.
 
-Hotel details include:
+The hotel records include:
 
 * Hotel ID
 * Hotel Image
@@ -105,24 +105,27 @@ Hotel details include:
 * Longitude
 * Price
 
-🎯 Learning Outcomes
+Learning Outcomes
 
-* Learned React.js component development.
-* Understood Redux state management.
-* Implemented CRUD operations.
-* Connected frontend with backend APIs.
-* Worked with PostgreSQL database.
-* Implemented image upload functionality.
-* Developed a responsive web application.
+Through this project, I gained practical experience in:
 
-👩‍💻 Developer
+* Developing user interfaces using React.js.
+* Managing application state using Redux.
+* Implementing CRUD operations.
+* Developing backend APIs using Node.js and Express.js.
+* Connecting frontend applications with backend APIs.
+* Performing database operations using PostgreSQL.
+* Implementing image upload functionality.
+* Building responsive web applications.
 
-Rishwana A.
+Developer Information
 
-Computer Science and Engineering Student
+Name: Rishwana A.
 
-GitHub: Rishwana07
+Education: Bachelor of Engineering – Computer Science and Engineering
 
-🔗 Project Repository
+GitHub: https://github.com/Rishwana07
 
-Hotel List App – GitHub
+Project Repository
+
+https://github.com/Rishwana07/Hotel-List-App
