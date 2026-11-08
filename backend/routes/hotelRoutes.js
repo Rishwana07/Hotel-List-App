@@ -108,7 +108,31 @@ router.get("/", async (req, res) => {
         });
     }
 });
+// GET - Fetch single hotel by id
+router.get("/:id", async (req, res) => {
+    try {
+        const { id } = req.params;
 
+        if (!Number.isInteger(Number(id))) {
+            return res.status(400).json({ message: "Invalid hotel id" });
+        }
+
+        const result = await pool.query(
+            "SELECT * FROM hotels WHERE id = $1",
+            [id]
+        );
+
+        if (result.rows.length === 0) {
+            return res.status(404).json({ message: "Hotel not found" });
+        }
+
+        res.status(200).json({ hotel: result.rows[0] });
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error fetching hotel" });
+    }
+});
 // POST - Add new hotel
 router.post("/", upload.single("image"), async (req, res) => {
     try {
