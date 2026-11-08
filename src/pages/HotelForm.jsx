@@ -170,7 +170,7 @@ function HotelForm() {
   // Convert backend image path into full image URL
   const previewImage = image
     ? image.startsWith("/uploads/")
-      ? `http://localhost:5000${image}`
+      ? `https://hotel-list-app.onrender.com${image}`
       : image
     : "";
 

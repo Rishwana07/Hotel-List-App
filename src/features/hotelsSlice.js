@@ -1,8 +1,7 @@
 
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const API_URL = "http://localhost:5000/api/hotels";
-
+const API_URL = "https://hotel-list-app.onrender.com/api/hotels";
 // 1. Fetch all hotels from backend
 export const fetchHotels = createAsyncThunk(
   "hotels/fetchHotels",

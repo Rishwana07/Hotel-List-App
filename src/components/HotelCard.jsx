@@ -7,7 +7,7 @@ function HotelCard({ hotel, onEdit, onDelete }) {
   const imageSrc = hotel.image
     ? hotel.image.startsWith("http")
       ? hotel.image
-      : `http://localhost:5000${hotel.image}`
+      : `https://hotel-list-app.onrender.com${hotel.image}`
     : "https://placehold.co/600x400?text=Hotel";
 
   return (
