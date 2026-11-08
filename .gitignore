@@ -27,6 +27,3 @@ dist-ssr
 .env.*
 !.env.example
 
-# Uploaded test images
-backend/uploads/*
-!backend/uploads/.gitkeep
