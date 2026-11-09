@@ -1,131 +1,265 @@
 Hotel List App
 
-Project Overview
+A full-stack web application for adding, viewing, updating, deleting, and managing hotel details.
 
-Hotel List App is a Full Stack CRUD (Create, Read, Update, Delete) web application developed using React.js, Redux, Node.js, Express.js and PostgreSQL.
+1. Project Description
 
-The application provides an easy-to-use interface for managing hotel information. Users can add new hotels, view hotel details, update existing records and delete hotels.
+I developed this Hotel List App as a full-stack web development project. The main purpose of this application is to manage hotel details in one place.
 
-Technologies Used
+Users can add new hotels, view hotel information, edit existing details, and delete hotel records. The application also includes image upload, search, price filtering, and pagination features.
+
+I used React.js for the frontend, Node.js and Express.js for the backend, and PostgreSQL for storing hotel information.
+
+2. Live Project Links
+
+Component	Link
+Frontend	https://hotel-list-app.vercel.app
+Backend	https://hotel-list-app.onrender.com
+REST API	https://hotel-list-app.onrender.com/api/hotels
+GitHub Repository	https://github.com/Rishwana07/Hotel-List-App
+
+3. Features
+
+Hotel Management
+
+* Add new hotel details.
+* View the list of hotels.
+* Edit existing hotel information.
+* Delete hotel records.
+* Upload hotel images and preview them before saving.
+
+Search and Filter
+
+* Search hotels using the hotel name.
+* Filter hotels based on minimum and maximum price.
+* View hotel details using pagination.
+
+User Interface
+
+* Responsive design for desktop, tablet, and mobile screens.
+* Card-based hotel listing.
+* Reusable form for adding and editing hotels.
+* Separate page to view complete hotel details.
+* Form validation for hotel information.
+* Dynamic page titles and metadata.
+
+Location Details
+
+* Store hotel latitude and longitude.
+* Display hotel location using map integration.
+
+4. Technologies Used
 
 Frontend
 
 * React.js
-* Redux
-* JavaScript
+* Redux Toolkit
+* React Router DOM
+* JavaScript (ES6+)
 * HTML5
 * CSS3
+* React Helmet Async
 
 Backend
 
 * Node.js
 * Express.js
+* Multer
+* CORS
 
 Database
 
 * PostgreSQL
+* Neon Database
 
 Development Tools
 
 * Visual Studio Code
 * Git
 * GitHub
-* Postman
+* npm
 
-Key Features
+Deployment Platforms
 
-* Add new hotel details.
-* View the list of available hotels.
-* Edit existing hotel information.
-* Delete hotel records.
-* Upload and display hotel images.
+* Vercel – Frontend Deployment
+* Render – Backend Deployment
+* Neon – Database Hosting
+
+5. How the Application Works
+
+1. Users open the Hotel List App.
+2. The application displays hotel details retrieved from the backend API.
+3. The backend communicates with the PostgreSQL database.
+4. Users can add, edit, and delete hotel information.
+5. Users can search for hotels by name.
+6. Users can filter hotels based on price.
+7. Pagination is used to display hotel records across multiple pages.
+8. Users can open an individual hotel to view its complete details.
+
+6. System Architecture
+
+             User
+               |
+               v
+       React.js Frontend
+               |
+        Redux Toolkit
+               |
+         REST API Calls
+               |
+               v
+       Node.js + Express
+               |
+          SQL Queries
+               |
+               v
+         PostgreSQL
+          (Neon DB)
+
+7. REST API Details
+
+Base URL:
+
+https://hotel-list-app.onrender.com/api/hotels
+
+Method	Endpoint	Purpose
+GET	/api/hotels	Get all hotel records
+GET	/api/hotels/:id	Get a particular hotel
+POST	/api/hotels	Add a new hotel
+PUT	/api/hotels/:id	Update hotel details
+DELETE	/api/hotels/:id	Delete a hotel
+
+Additional API Features
+
 * Search hotels by title.
-* Filter hotels based on minimum and maximum price.
-* Pagination for hotel listings.
-* Store hotel latitude and longitude.
-* View hotel locations on a map.
-* Responsive user interface.
-* Form validation for user inputs.
+* Filter hotels using minimum and maximum price.
+* Pagination using limit and offset.
+* Upload hotel images using Multer.
 
-Project Structure
+8. Database Details
+
+I used PostgreSQL to store the hotel information.
+
+Table Name: hotels
+
+Column	Description
+id	Unique hotel ID
+image	Hotel image path
+title	Hotel name
+description	Hotel description
+latitude	Hotel latitude
+longitude	Hotel longitude
+price	Hotel price
+created_at	Record creation date and time
+
+9. Project Folder Structure
 
 Hotel-List-App/
 │
 ├── backend/
-│
-├── public/
+│   ├── config/
+│   │   └── db.js
+│   ├── routes/
+│   │   └── hotelRoutes.js
+│   ├── uploads/
+│   ├── server.js
+│   └── package.json
 │
 ├── src/
+│   ├── app/
+│   ├── components/
+│   ├── features/
+│   ├── pages/
+│   ├── data/
+│   ├── App.jsx
+│   └── main.jsx
 │
-├── .gitignore
+├── public/
 ├── package.json
-├── README.md
-└── vite.config.js
+└── README.md
 
-Installation and Setup
+10. How to Run the Project Locally
 
-1. Clone the Repository
+Prerequisites
+
+* Node.js
+* npm
+* PostgreSQL database
+
+Step 1: Clone the Repository
 
 git clone https://github.com/Rishwana07/Hotel-List-App.git
-
-2. Navigate to the Project Directory
-
 cd Hotel-List-App
 
-3. Install Frontend Dependencies
+Step 2: Install Frontend Dependencies
 
 npm install
 
-4. Start the Frontend Application
-
-npm run dev
-
-5. Set Up the Backend
-
-Open a new terminal and navigate to the backend directory.
+Step 3: Install Backend Dependencies
 
 cd backend
 npm install
 
-Configure the PostgreSQL database connection and required environment variables in the backend .env file.
+Step 4: Configure Environment Variables
 
-Start the backend using the appropriate command defined in the backend package.json.
+Create a .env file inside the backend folder.
 
-Database Information
+DATABASE_URL=your_postgresql_connection_string
+PORT=5000
 
-PostgreSQL is used as the database to store hotel information.
+Step 5: Start the Backend
 
-The hotel records include:
+node server.js
 
-* Hotel ID
-* Hotel Image
-* Hotel Title
-* Description
-* Latitude
-* Longitude
-* Price
+Step 6: Start the Frontend
 
-Learning Outcomes
+Open another terminal in the main project folder and run:
 
-Through this project, I gained practical experience in:
+npm run dev
 
-* Developing user interfaces using React.js.
-* Managing application state using Redux.
-* Implementing CRUD operations.
-* Developing backend APIs using Node.js and Express.js.
-* Connecting frontend applications with backend APIs.
-* Performing database operations using PostgreSQL.
-* Implementing image upload functionality.
-* Building responsive web applications.
+Open the local URL displayed in the terminal.
 
-Developer Information
+11. Deployment
 
-Name: Rishwana A.
+I deployed the application using the following platforms:
 
-Education: Bachelor of Engineering – Computer Science and Engineering
+Application Layer	Platform
+Frontend	Vercel
+Backend	Render
+Database	Neon PostgreSQL
 
-GitHub: https://github.com/Rishwana07
+The deployed frontend connects to the backend API to retrieve and update hotel information. PostgreSQL is used to store the hotel records.
 
-Project Repository
+12. What I Learned
 
-https://github.com/Rishwana07/Hotel-List-App
+While developing this project, I learned how to:
+
+* Create reusable components using React.js.
+* Manage application data using Redux Toolkit.
+* Connect the frontend with backend APIs.
+* Perform CRUD operations.
+* Work with a PostgreSQL database.
+* Upload images using Multer.
+* Implement search and price filtering.
+* Implement pagination.
+* Create responsive web pages.
+* Deploy a full-stack application.
+
+13. Project Screenshots
+
+Screenshots of the application can be added here.
+
+* Hotel Listing Page
+* Add/Edit Hotel Form
+* Hotel Details Page
+* Search and Filter Results
+
+14. About Me
+
+Rishwana A.
+
+B.E. Computer Science and Engineering
+CARE College of Engineering
+
+Project Name: Hotel List App
+Project Type: Full-Stack Web Development
